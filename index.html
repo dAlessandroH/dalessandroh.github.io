@@ -1,68 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
-
-    <script src="https://kit.fontawesome.com/26acfbe665.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="CSS/styles.css">
-    <title>David Alessandro Hernández Cervantes</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio | Alessandro</title>
+  <meta name="description" content="Portafolio personal de Alessandro - Proyectos y sitios web alojados en GitHub Pages." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="cabecera">
-        <h1> Alessandro Cervantes</h1>
-        <img src="img/perfil.jpg" alt="" width="250px" height="250px">
-        <div class="socialmedia">   
-            <a href="www.kirilamx.com"><i  class="fa-brands fa-facebook"></i></a>
-            <a href="www.instagram/alessandrocerv12"><i class="fa-brands fa-square-instagram"></i></a>
-            <a href="https://github.com/dAlessandroH"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/david-alessandro-hernandez-8915812a2/"><i class="fa-brands fa-linkedin"></i></a>
-        </div>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <div class="logo">Alessandro<span>.</span></div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
     </div>
-    <div class="body">
-        <div class="menu">
-            <a href="#interests">Interests</a>
-            <a href="#hobbies">Hobbies</a>
-            <a href="#experience">Experience</a>
-            <a href="#education">Education</a>
-            <a href="#projects">Projects</a>
+  </header>
+
+  <!-- Hero / Inicio -->
+  <section id="inicio" class="hero">
+    <div class="container hero-content">
+      <div class="hero-text" style="display: flex; align-items: center; gap: 20px;">
+        <img src="1.jpg" alt="Profile picture of Alessandro" class="profile" style="border-radius: 50%; width: 120px; height: 120px; object-fit: cover; margin: 0;">
+        <h1>Hola, soy <span>Alessandro</span></h1>
+      </div>
+      <h2>Estudiante de medicina y desarrollador web autodidacta</h2>
+      <p>
+        Me apasiona la medicina, la tecnología y crear sitios web limpios y funcionales.
+        En este portafolio encontrarás los proyectos que he publicado en GitHub Pages, siempre trato de enfocar mis conocimientos de dev en mi dia a dia.
+      </p>
+      <div class="hero-buttons">
+        <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+        <a href="https://github.com/TU-USUARIO" target="_blank" class="btn btn-secondary">
+          Ver mi GitHub
+        </a>
+      </div>
+      <div class="hero-side" style="margin-top: 2rem;">
+        <div class="hero-card" style="max-width: 18rem;">
+          <p class="hero-card-title">Estado actual</p>
+          <p>📚 1er semestre de Medicina</p>
+          <p>🌄Informático de noche, médico de dia.</p>
+          <p>💻 Construyendo proyectos.</p>
+          <p>🧠 TDAH, pero persistente</p>
         </div>
-        <h2 id="interests"class="containerh">My interests</h2>
-        <p>Im a starter developer, that is founding his new way to start a new code life, just trying to code and still studing
-            also, I want to be a Android Developer, and become a wonderful dev while share all my knowledge to who needs it can help us to grow up our knowledge.
-        </p>
-        <h2 id="hobbies"class="interest">My hobbies</h2>
-        <p>I also like to play a lot of videogames, like valorant, csgo, fornite and the legendary minecraft, as a curious fact minecraft was the game that impulse me to computer science
-            cause when I whas a child I was playing minecraft and I was in love with it, and I wanted to know how it was made.
-            <br>
-            I like to travel and discover places, spend some time with my buddies and my family, and Eat, I love fool as a fact I don't like sea food.</p>
-        <h2 id="experience"class="experience">My experience</h2>
-        <p>As a starter developer my experience is really short, I know the basics about develop but I still learning and trying until I get my goal.
-            <br>
-            Also a study IT in the h    igh school and now I am studying in the university IT Technologies.
-            <br>
-            When I have a project in the university I give all my effort because I see it as a challenge and I always try to do something different, taking advantage of all the technologies with my knowledge at my disposal.
-            <br>
-            I am also interested in web development in which I have several projects such as my agency <a href="www.kirilamx.com">www.kirilamx.com</a>
-            and several more projects with clients.
-        </p>
-        <h2 id="projects"class="proj">My Projects</h2>
-        <p>Loading...</p>
-        <div class="edu">
-            <h1 id="education" class="education">Education</h1>
-            <h2>UNIVERSIDAD AUTONOMA DE AGUASCALIENTES</h2>
-            <p>Information Technology & Computer Science</p>    
-            <span class="text-primary">August 2022 - OnGoing</span>
-            <br>
-            <h2>CONALEP J.REFUGIO ESPARZA REYES</h2>    
-            <p>Computer Science - Best Generation Average</p>
-            <span class="text-primary">January 2018 - July 2022</span>
-        </div>
-        
+      </div>
     </div>
-    
+  </section>
+
+  <!-- Sobre mí -->
+  <section id="sobre-mi" class="section">
+    <div class="container">
+      <h2 class="section-title">Sobre mí</h2>
+      <div class="about-grid">
+        <div>
+          <p>
+            Soy Alessandro, estudiante de Medicina con interés especial en la intersección entre
+            salud y tecnología. En mi tiempo libre desarrollo sitios web y recursos digitales.
+          </p>
+          
+          
+          <p>
+            Utilizo este portafolio para organizar y mostrar mis proyectos, tanto académicos como
+            personales. Mi objetivo es seguir mejorando mis habilidades técnicas mientras avanzo
+            en mi formación médica.
+          </p>
+        </div>
+        <div>
+          <h3>Habilidades técnicas</h3>
+          <ul class="skills-list">
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript básico</li>
+            <li>Wordpress</li>
+            <li>Elementor</li>
+          </ul>
+          <h3>Áreas de interés</h3>
+          <ul class="skills-list">
+            <li>Medicina</li>
+            <li>Productividad</li>
+            <li>Herramientas digitales</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Proyectos</h2>
+      <p class="section-subtitle">
+        Estos son algunos de los sitios que tengo publicados.
+      </p>
+
+      <div class="projects-grid">
+        <!-- Proyecto 1 -->
+        <article class="project-card">
+          <h3>Sitio 1 – Gyzco Psicologia</h3>
+          <p>
+            Agencia de psicologos en Aguascalientes.
+          </p>
+          <div class="project-meta">
+            <span>HTML · CSS · JS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://www.gyzcopsicologia.com/" target="_blank" class="btn btn-small">
+              Ver sitio
+            </a>
+          </div>
+        </article>
+
+        <!-- Proyecto 2 -->
+        <article class="project-card">
+          <h3>Sitio 2 – Simulador De Examenes</h3>
+          <p>
+            Este es un simulador que realize totalmente dedicado a mi carrera de medicina, la cual lo utilizo bastante como metodo de apoyo para estudiar.
+
+          </p>
+          <div class="project-meta">
+            <span>HTML · CSS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://dalessandroh.github.io/dalessandrocerv/" target="_blank" class="btn btn-small">
+              Ver sitio
+            </a>
+          
+            </a>
+          </div>
+        </article>
+
+        <!-- Proyecto 3 -->
+        <article class="project-card">
+          <h3>Sitio 3 – Maqueta del ADN</h3>
+          <p>
+            Una pequeña maqueta que muestra las partes del ADN, explica de manera breve su funcion y aparte tiene un mini quizz de repaso.
+          </p>
+          <div class="project-meta">
+            <span>GitHub Pages</span>
+          </div>
+          <div class="project-links">
+            <a href="https://TU-USUARIO.github.io/NOMBRE-REPO-3" target="_blank" class="btn btn-small">
+              Ver sitio
+            </a>
+         
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section">
+    <div class="container">
+      <h2 class="section-title">Contacto</h2>
+      <p class="section-subtitle">
+        Si quieres ponerte en contacto conmigo, puedes usar cualquiera de estos medios.
+      </p>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Correo</h3>
+          <p>
+            <a href="mailto:kirilacontacto@gmail.com">kirilacontacto@gmail.com</a>
+          </p>
+        </div>
+        <div class="contact-card">
+          <h3>GitHub</h3>
+          <p>
+            <a href="https://github.com/dAlessandroH" target="_blank">github.com/dAlessadroH</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Alessandro. Todos los derechos reservados.</p>
+      <p>Portafolio alojado en GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
